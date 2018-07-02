@@ -48,7 +48,9 @@ public class YamlFileParser {
 			if(isInTransformersPart) {
 				isInDependenciesPart = false; 
 				isInDev_DependenciesPart = false;
+				if(!lineTrimmed.startsWith("transformers")) {
 				transformers.addValue(lineTrimmed);
+				}
 			}
 			
 			isInDev_DependenciesPart =  isInDev_DependenciesPart || lineTrimmed.startsWith("dev_dependencies");

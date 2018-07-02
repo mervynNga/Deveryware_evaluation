@@ -16,9 +16,7 @@ public class YamlFileParserTest extends TestCase {
 		assertEquals(yaml.getName(), "dakar");
 		assertEquals(yaml.getDependencies().getArgs(), "any");
 		assertEquals(yaml.getDependencies().getGoogle_maps(), "^3.1.0");
-		if(yaml.getTransformers().getValues().size()==3) {
-			fail("bad transformers extraction");
-		}
+		assertEquals(yaml.getTransformers().getValues(), 3);
 	}
 
 	public void testExtractValueLinkedToProperty() {

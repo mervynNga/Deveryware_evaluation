@@ -1,7 +1,16 @@
 package com.mervyn.deveryware.evaluation_exo;
 
 public class Dependencies {
-	String args, browser, geo, shelf, shelf_web_socket, shelf_static, xml_rpc, google_maps, dart_to_js_script_rewriter = "any";
+	String args = "any";
+	String browser = "any";
+	String geo = "any";
+	String shelf = "any";
+	String shelf_web_socket = "any";	
+	String shelf_static = "any";
+	String xml_rpc = "any";
+	String google_maps = "any";
+	String dart_to_js_script_rewriter = "any";
+	
 
 	public Dependencies() {
 	}
